@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class Car(ABC):
-    def peredacha(self):
+    def transmission(self):
         print('1')
 
     @abstractmethod
@@ -25,11 +25,11 @@ class ToyotaCamry(Car, Toyota):
 
     def move(self):
         super(ToyotaCamry, self).move()
-        print("Dzelenchit motors")
+        print("Noisy motors")
 
     @staticmethod
     def exampleStatic():
-        print("Example Static Static")
+        print("Example Static")
 
 
     def bibi(self):
@@ -54,7 +54,7 @@ class ToyotaCamry(Car, Toyota):
         print(self.engine)
 
     def __del__(self):
-        print("Na metalolom")
+        print("Na metal")
 
 
 ToyotaCamry.exampleStatic()
